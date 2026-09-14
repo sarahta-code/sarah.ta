@@ -823,7 +823,7 @@ section{padding:clamp(3.4rem,7vw,5.6rem) 0;scroll-margin-top:70px}
   });
 
   /* ---------- filtering ---------- */
-  var filters = document.querySelectorAll(".filter");
+  var filters = document.querySelectorAll("#work .filter");
   var status = document.getElementById("filterStatus");
   var labels = { all:"all case studies", product:"product case studies", analysis:"business and analytical case studies" };
   filters.forEach(function(f){
@@ -847,7 +847,7 @@ section{padding:clamp(3.4rem,7vw,5.6rem) 0;scroll-margin-top:70px}
   } else { cases.forEach(function(c){ c.classList.add("grown"); }); }
 
   /* ---------- design work tabs ---------- */
-  var tabBtns = Array.prototype.slice.call(document.querySelectorAll("[data-tab]"));
+  var tabBtns = Array.prototype.slice.call(document.querySelectorAll("#creative [data-tab]"));
   tabBtns.forEach(function(b){
     b.addEventListener("click", function(){
       var want = b.dataset.tab;
